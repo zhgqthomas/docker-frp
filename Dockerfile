@@ -1,8 +1,8 @@
-FROM alpine:3.8
+FROM alpine:3.9
 
-ARG frp_version
+ARG frp_version=0.27.0
 
-ADD ./docker-entrypoint.sh /
+COPY docker-entrypoint.sh /
 
 RUN apk add --virtual .build-dependencies --no-cache openssl
 
