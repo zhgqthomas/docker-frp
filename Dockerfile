@@ -1,6 +1,6 @@
 FROM alpine:3.9
 
-ARG frp_version=0.27.1
+ARG frp_version=0.29.0
 
 COPY docker-entrypoint.sh /
 
